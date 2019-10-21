@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--[if !IE]><!-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>REGISTER</title>
+	<!--<![endif]-->
+</head>
+<body background="images/kacamata.jpg" background-size="cover">
+	<form class="form" name="form" onsubmit="validation();">
+		<div class="registeratas">User Registration</div>
+		<div class="isiregister">
+			<input type="text" placeholder="First Name" required>
+			<input type="text" placeholder="Last Name" required>
+			<input type="text" placeholder="Email" required>
+			<input type="text" placeholder="Address" required>
+			<input type="number" placeholder="Phone Number" required>
+			<input type="password" placeholder="Password" required>
+			<input type="password" placeholder="Confirm Password" required>
+		</div>
+		<input type="checkbox" class="agree" > Saya Setuju 
+		<br>
+		<button class="register" type="submit" onclick="daftarakun();"> REGISTER </button> 
+		<br>
+		<a href="login.html" class="akun" > Already have an account ?</a>
+	</form>
+	<script type="text/javascript">
+	function validation(){
+		event.preventDefault();
+		console.log(document.forms['form']);
+		if(document.forms['form'].value == ""){
+			alert('mohon lengkapi data');
+		}
+	}
+	</script>
+</body>
+</html>
