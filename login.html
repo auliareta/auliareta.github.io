@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--[if !IE]><!-->
+	<title>LOGIN</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--<![endif]-->
+</head>
+<body background="images/kacamata.jpg"; background-size= cover;>
+	<center><h1 class="teks-h1">USER LOGIN</h1></center>
+	<div class="login-box">
+		<form>
+			<label>Username</label>
+			<input type="text" name="username" class="form_login" placeholder="Username atau email .."required>
+			<label>Password</label>
+			<input type="text" name="password" class="form_login" placeholder="Password .."required>
+			<input type="submit" class="tombol_login" value="LOGIN">
+			<br/>
+			<br/>
+			</form>
+	</div>
+	<script>
+		
+		function masukakun() {
+			var username = document.getElementById("UserName").value;
+			var password = document.getElementById("Password").value;
+			if((username == "Algoshop") && (password == "123456")) {
+				alert("selamat anda berhasil masuk");
+			}
+			else {
+				alert("maaf anda gagal login");
+			}
+		}
+
+	</script>
+</body>
